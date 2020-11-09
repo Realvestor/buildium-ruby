@@ -1,17 +1,17 @@
 # coding: utf-8
 $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
 
-require "lob/version"
+require "buildium/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "lob"
-  spec.version       = Lob::VERSION
-  spec.authors       = ["Lob"]
-  spec.email         = ["support@lob.com"]
-  spec.description   = %q{Lob API Ruby wrapper}
-  spec.summary       = %q{Ruby wrapper for Lob.com API with ActiveRecord-style syntax}
-  spec.homepage      = "https://github.com/lob/lob-ruby"
-  spec.license       = "MIT"
+  spec.name          = "buildium"
+  spec.version       = Buildium::VERSION
+  spec.authors       = ["James Dullaghan"]
+  spec.email         = ["support@realvestor.io"]
+  spec.description   = %q{Buildium API Ruby wrapper}
+  spec.summary       = %q{Ruby wrapper for Buildium API with ActiveRecord-style syntax}
+  spec.homepage      = "https://github.com/Realvestor/buildium-ruby"
+  spec.license       = "Propietary"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }

@@ -9,7 +9,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 ]
 SimpleCov.start
 
-require "lob"
+require "buildium"
 require "minitest/spec"
 require "minitest/pride"
 require "minitest/autorun"
