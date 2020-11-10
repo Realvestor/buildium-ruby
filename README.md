@@ -24,7 +24,7 @@ Here's how you can run the tests:
 
 You can also configure, TravisCI for your fork of the repository and it'll run the tests for you, when you push.
 
-=======================
+----------------
 
 Copyright &copy; 2020 Realvestor LLC
 
