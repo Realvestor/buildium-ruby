@@ -1,7 +1,7 @@
 module Buildium
   module Resources
     class Association < Base
-      def self.retrieve_associations
+      def self.get_associations
         request do
           @path = "/associations"
         end
@@ -24,37 +24,37 @@ module Buildium
         end
       end
 
-      def self.retrieve_association_owners
+      def self.get_association_owners
         request do
           @path = "/associations/owners"
         end
       end
 
-      def self.retrieve_association_owner(owner_id:)
+      def self.get_association_owner(owner_id:)
         request do
           @path = "/associations/owners/#{owner_id}"
         end
       end
 
-      def self.retrieve_ownership_accounts
+      def self.get_ownership_accounts
         request do
           @path = "/associations/ownershipaccounts"
         end
       end
 
-      def self.retrieve_association_ownership_account(ownership_account_id:)
+      def self.get_association_ownership_account(ownership_account_id:)
         request do
           @path = "/associations/ownershipaccounts/#{ownership_account_id}"
         end
       end
 
-      def self.retrieve_ownership_account_transactions(ownership_account_id:)
+      def self.get_ownership_account_transactions(ownership_account_id:)
         request do
           @path = "/associations/ownershipaccounts/#{ownership_account_id}/transactions"
         end
       end
 
-      def self.retrieve_association_tenants
+      def self.get_association_tenants
         request do
           @path = "/association/tenants"
         end
@@ -82,7 +82,7 @@ module Buildium
         end
       end
 
-      def self.retrieve_association_tenant(tenant_id:)
+      def self.get_association_tenant(tenant_id:)
         request do
           @path = "/associations/tenants/#{tenant_id}"
         end
@@ -107,7 +107,7 @@ module Buildium
         end
       end
 
-      def self.retrieve_association_units
+      def self.get_association_units
         request do
           @data = data
           @path = "/associations/units"
@@ -130,7 +130,7 @@ module Buildium
         end
       end
 
-      def self.retrieve_association_unit(unit_id:)
+      def self.get_association_unit(unit_id:)
         request do
           @path = "/association/units/#{unit_id}"
         end
@@ -144,7 +144,7 @@ module Buildium
         end
       end
 
-      def self.retrieve_association(association_id:)
+      def self.get_association(association_id:)
         request do
           @path = "/associations/#{association_id}"
         end
